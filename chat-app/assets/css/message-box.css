@@ -1,0 +1,82 @@
+.message-box {
+    width: 55%;
+    margin: auto;
+    border-top: 10px solid #745cf1;
+}
+
+.message-container {
+    height: 650px;
+    overflow: scroll;
+}
+
+.message__avatar {
+    width: 9rem;
+    height: 9rem;
+}
+
+.message {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1rem;
+}
+
+.message > div {
+    flex-grow: 2;
+}
+
+.message__left {
+    flex-direction: row-reverse;
+}
+
+.message__right > .message__avatar {
+    margin-right: 2rem;
+}
+
+.message__left > .message__avatar {
+    margin-left: 2rem;
+}
+
+.message__content {
+    padding: 0.8rem;
+    min-height: 50%;
+    position: relative;
+    width: 100%;
+}
+
+.message__right .message__content {
+    background-color: #745cf1;
+    color: #fff;
+    text-align: left;
+}
+
+.message__right .message__content:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -20px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: #745cf1 transparent transparent transparent;
+}
+
+.message__left .message__content {
+    background-color: #e6e6e6;
+    color: #b8b8b8;
+    text-align: right;
+}
+
+.message__left .message__content:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -20px;
+    left: auto;
+    top: 0px;
+    bottom: auto;
+    border: 22px solid;
+    border-color: #e6e6e6 transparent transparent transparent;
+}
